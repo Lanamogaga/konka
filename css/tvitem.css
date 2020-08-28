@@ -1,0 +1,259 @@
+*{margin:0;padding:0;
+    /* box-sizing: border-box; */
+}
+li{
+	list-style:none;
+}
+a{
+	text-decoration: none;
+}
+img{
+	display: block;
+	border:none;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight:normal;
+}
+em,i{
+	font-style:normal;
+}
+b,strong{
+	font-weight: normal;
+}
+body{overflow:scroll;overflow-x:hidden;
+    width: 100%;
+    background: #f7f7f7;
+    min-width: 1140px;
+    
+}
+
+
+
+.topwrap{
+    width: 100%;
+    height: 40px;
+    background: #333;
+}
+.top{
+    width: 1144px;
+    height: 40px;
+    /* background: rosybrown; */
+    font-size: 12px;
+    color: #b0b0b0;
+    margin: 0 auto;
+}
+.top ul{
+    float: left;
+}
+.top li,.top-right p{
+    float: left;
+    margin: 12px 0px;
+    color:  #424242;;
+
+
+}
+.top li a,.top-right p a{
+     /* padding: 0 px; */
+     color: #b0b0b0;
+     margin: 0 9.5px;
+     width: 48px;
+     text-decoration: none;
+
+}
+.top li:nth-child(0) a{
+    padding-left: 0;
+}
+.top-right{
+    /* width: 210px; */
+    height: 40px;
+    float: right;
+}
+.shopcart{
+    float: left;
+    width: 115px;
+    height: 40px;
+    line-height: 40px;
+    /* padding: 0 20px; */
+    background:#424242;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.shopcart a{
+    color: #b0b0b0;
+}
+/* top导航 end */
+
+
+.navwrap{
+    width: 100%;
+    height: 50px;
+    background: #f7f7f7;
+}
+.nav{
+    width: 1138px;
+    height: 48px;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,.3);
+    background: #fff;
+    margin: 0 auto;
+    border: 1px solid #f7f7f7;
+   position: relative;
+    
+}
+.nav-fixed{
+    position: fixed;
+    top:40px ;
+    left: 0;
+    right: 0;
+
+}
+
+
+.logo{
+  
+    padding: 0 15px;
+    float: left;
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+.logo img{
+    min-width: 100%;
+    vertical-align: middle;
+    /* padding-top: 10px; */
+}
+.nav ul{
+    float: left;
+    margin-right: 185px;
+    margin: 0 auto;
+    position: absolute;
+    left: 165px;
+}
+.nav li{
+    float: left;
+    width: 72px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    box-sizing: border-box;
+    
+}
+.nav li:nth-child(11) img{
+    /* width: 21px;
+    height: 20px; */
+    padding: 15px;
+    
+}
+.nav li a{
+    font-size: 14px;
+    color: #767676;
+    text-decoration: none;
+}
+
+
+.listnav-wrap{
+    width: 233px;
+    height: 500px;
+    /* border: 1px solid #000; */
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 7%;
+    z-index: 2;
+}
+.list-nav{
+    width: 233px;
+    height: 500px;
+    background: rgba(0,0,0,.6);
+    padding: 25px 0;
+    box-sizing: border-box;
+    font-family:  Microsoft Yahei,Hiragino Sans GB,WenQuanYi Micro Hei,sans-serif;
+    font-size: 14px;
+    /* position: absolute; */
+    /* z-index: 2; */
+  
+}
+.list-nav a{
+    display: block;
+    width: 203.9px;
+    height: 45px;
+    padding-left: 30px;
+    position: relative;
+    margin: 5px 0;
+    line-height: 45px;
+    color: #fff;
+}
+/* .list-nav a:hover{
+    background-color: red;
+} */
+.list-nav i{
+    width: 16px;
+    height: 15px;
+    position: absolute;
+    /* top: 5px; */
+    right: 20px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 14px;
+}
+
+
+
+
+
+
+.tvcontainer{
+    width: 100%;
+    height: 2100px;
+    padding-top: 30px;
+    /* border: 1px solid #000; */
+    
+    background: #f7f7f7;
+}
+.glist-container{
+    width: 1180px;
+    height: 2000px;
+    margin: 0 auto;
+    position: relative;
+}
+.breadcrumb{
+    width: 1140px;
+    height: 20px;
+    margin-bottom: 10px;
+    /* background: #333; */
+}
+
+.goods-list{
+    width: 1140px;
+    height: 1860px;
+    /* background: #424242; */
+}
+
+.tvlist-nav{
+    width: 1140px;
+    height: 40px;
+    background: #f7f7f7;
+    /* border: 1px solid #000; */
+}
+.tvlist-nav .left a{
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    line-height: 38px;
+    color: #333;
+    text-align: center;
+    font-size: 14px;
+    /* border: 2px solid #f7f7f7; */
+ 
+}
+.tvadd{
+    border-top: 2px solid #da2a2a;
+    color: #da2a2a;
+    box-sizing: border-box;
+    background: #fff;
+    line-height: 38px;
+    
+}
+.row3{
+    padding-top: 20px;
+}

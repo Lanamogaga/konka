@@ -1,0 +1,367 @@
+*{margin:0;padding:0;}
+li{
+	list-style:none;
+}
+a{
+	text-decoration: none;
+}
+img{
+	display: block;
+	border:none;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight:normal;
+}
+em,i{
+	font-style:normal;
+}
+b,strong{
+	font-weight: normal;
+}
+body{overflow:scroll;overflow-x:hidden;
+width: 100%;
+}
+
+.topwrap{
+    width: 100%;
+    height: 40px;
+    background: #333;
+}
+.top{
+    width: 1144px;
+    height: 40px;
+    /* background: rosybrown; */
+    font-size: 12px;
+    color: #b0b0b0;
+    margin: 0 auto;
+}
+.top ul{
+    float: left;
+}
+.top li,.top-right p{
+    float: left;
+    margin: 12px 0px;
+    color:  #424242;;
+
+}
+.top li a,.top-right p a{
+     padding: 0 10px;
+     color: #b0b0b0;
+
+}
+.top-right{
+    width: 210px;
+    height: 40px;
+    float: right;
+}
+.shopcart{
+    float: left;
+    width: 75px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    background:#424242;
+    
+}
+.shopcart a{
+    color: #b0b0b0;
+}
+
+.navwrap{
+    width: 100%;
+    height: 50px;
+    background: #f7f7f7;
+}
+.nav{
+    width: 1138px;
+    height: 48px;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,.3);
+    background: #fff;
+    margin: 0 auto;
+    border: 1px solid #f7f7f7;
+   
+    
+}
+.nav-fixed{
+    position: fixed;
+    top:40px ;
+    left: 0;
+    right: 0;
+
+}
+
+
+.logo{
+    width: 131px;
+    height: 50px;
+    padding: 0 15px;
+    float: left;
+}
+.logo img{
+    width: 112px;
+    height: 28px;
+    vertical-align: middle;
+    padding-top: 10px;
+}
+.nav ul{
+    /* float: right; */
+    margin-right: 185px;
+}
+.nav li{
+    float: left;
+    width: 72px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    box-sizing: border-box;
+    
+}
+.nav li:nth-child(11) img{
+    width: 21px;
+    height: 20px;
+    padding: 15px;
+    
+}
+.nav li a{
+    font-size: 14px;
+    color: #767676;
+}
+
+
+.loginbg{
+    width: 100%;
+    /* height: 588px; */
+    background:url(../img/bgbg.png) no-repeat;
+    background-size: 100% 100%;
+}
+.login{
+    width: 1140px;
+    height:588px ;
+    /* border: 1px solid #000; */
+    margin: 0 auto;
+    position: relative;
+    font-family: Microsoft Yahei,Hiragino Sans GB,WenQuanYi Micro Hei,sans-serif;
+    color: #333;
+    font-size: 14px;
+}
+.memberlogin{
+    width: 448px;
+    height: 360px;
+    border: 1px solid #ccc;
+    background: #fff;
+    position: absolute;
+    right: 0;
+    top: 100px;  
+}
+
+.form-item input,.agree,.autologin,.form-item2 input{
+    width: 320px;
+    height: 34px;
+   
+}
+
+.signup-top,.login-top{
+    width: 418px;
+    height: 22px;
+    background:#f5f5f5;
+    padding: 10px 15px;
+    vertical-align: text-top;
+    position: relative;
+}
+.signup-top span,.login-top span{
+    display: inline-block;
+    color: #fff;
+    background-color: #c13e2c;
+    border-color: #ac3727;
+    padding: 1px 5px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 1px;
+    border: 1px solid transparent;
+    position: absolute;
+    right: 15px;
+}
+.login-top span{
+    background: #f99e1e;
+}
+
+.label{
+    width: 112px;
+    height: 27px;
+    text-align: right;
+    font-size: 14px;
+    font-weight: bold;
+}
+.label em{
+    color: #a94442;
+}
+.image-code{
+    text-indent: 14px;
+    position: relative;
+}
+.image-code input{
+    width: 134.33px;
+}
+.form-item,.form-item2{
+    margin-left: 15px;
+    margin-bottom: 16px;   
+}
+.agree{
+    margin-left: 93px;  
+}
+
+
+.agree label{
+    vertical-align: top;
+}
+.agree input,.autologin input{
+    margin-right: 8px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 2px;
+}
+.agree span,.autologin span{
+    color: #767676;
+}
+
+.signup-mid{
+    padding: 15px;
+}
+.form-item input,.form-item2 input{
+    margin-left: 10px;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    border-radius: 2px;
+    text-indent: 12px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+.form-group__message {
+    display: none;
+    color: #a94442;
+    margin-left: 80px
+}
+
+.form-group-error .form-group__message {
+    display: inline-block;
+    font-size: 12px;
+    color: #a94442;
+}
+
+.form-group-error .btn:disabled,
+.form-group-error button:disabled {
+    background-color: #ccc!important;
+    cursor: not-allowed!important;
+}
+.form-group-error input,
+.form-group-error input:focus,
+.form-group-error input:hover,
+.form-group-error textarea {
+    border-color: #a94442;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    outline: none;
+}
+.form-group-error{
+    margin-bottom: 0px;
+}
+.form-group-success input{
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    border-color: #3c763d;
+    outline: none;
+}
+
+.password_error{
+    width: 418px;
+    height: 52px;
+    color: #a94442;
+    background:#f2dede;
+    font-size: 16px;
+    position: absolute;
+    bottom: 20px;
+    left: -65px;
+    line-height: 52px;
+    text-indent: 15px;
+}
+.submit button,.login-success button{
+    background: #f99e1e;
+    margin: 0;
+    padding: 0;
+    border: 1px solid transparent; 
+    outline: none;
+    margin-left: 92px;
+    color: #fff;
+    width: 54px;
+    height: 34px;
+    border-radius: 2px;
+    }
+.login-success button{
+    margin-left: 73px;
+    background: #ac3727;
+}
+
+
+.form-item2 input{
+    margin-left: 30px;
+    width: 343px;
+}
+.image-code2 input{
+    width: 156px;
+    height: 34px;
+    margin-left: 21px;
+}
+.image-code2{
+    text-indent: -10px;
+}
+.login-mid{
+    width: 418px;
+    height: 238px; 
+    padding: 15px;  
+}
+.memberlogin2{
+    height: 302px;
+}
+.autologin{
+    margin-left: 73px;
+    position: relative;
+    width: 343px;
+}
+.autologin span{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
+.image-code-box{
+    width: 156px;
+    height: 36px;
+   /* background: #767676; */
+   display: inline-block;
+   margin-left: 15px;
+   /* padding: 0 10px; */
+   vertical-align:bottom;
+}
+#captcha,#captchaB{
+    height: 36px;
+}
+.imageCode-er,.imageCode-er2{
+    position: absolute;
+    right: 249px;
+    bottom: -26px;
+    /* width: 30px; */
+    margin-left: 0;
+    /* background: #ac3727;
+    color: #fff; */
+    height: 34px;
+    line-height: 34px;
+    /* background: #424242; */
+    text-align: center;
+    padding-right: 12px;
+    
+   
+}
+.imageCode-er2{
+    right: 282px;
+    bottom: 78px;
+
+}
