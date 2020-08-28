@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/tvitem.css">
+    <link rel="stylesheet" href="../css/iconfont/iconfont.css">
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script src="../js/tvitem.js"></script> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+        .sort li {
+            float: left;
+            width: 100px;
+            height: 35px;
+            text-align: center;
+        }
+        
+        .sort .cur {
+            color: red;
+        }
+        .nav-ul a{
+            text-decoration: none;
+        }
+        
+       
+    </style>
+</head>
+<style>
+    .item1{
+        height: 350px;
+        width: 270px;
+        font-size: 14px;
+        float: left;
+        padding: 0 10px;
+        /* background: #fff; */
+        margin-right: 20px;
+        background: #fff;
+        margin-bottom: 20px;
+        
+    }
+    .row-3{
+        margin-left: 20px;
+    }
+    .tvitem-box{
+        padding: 10px;
+        margin: 10px 0;
+        text-align: center;
+        position: relative;
+        padding-bottom: 20px;
+    }
+    .tvitem-box img{
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+    }
+    .tv-title{
+        /* width: 250px; */
+        height: 35px;
+        font-size: 16px;
+        margin-top: 10px;
+        padding: 0 10px;
+       
+        line-height: 35px;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        box-sizing: border-box;
+    }
+    .tv-dis{
+        width: 230px;
+        padding: 0 10px;
+     
+        color: #989898;
+        font-size: 14px;
+        overflow: hidden;
+        white-space: inherit;
+        text-overflow: ellipsis;
+        height: 47px;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        line-height: 22px;
+    }
+    .tv-price{
+        color: #da2a2a;
+        font-size: 15px;
+       
+    }
+    .shopcart2{
+        width: 115px;
+        height: 30px;
+        background: #da2a2a;
+        position: absolute;
+        left: 70px;
+        right: 0;
+        bottom: 10px;
+        text-align: center;
+        line-height: 30px;
+        opacity: 0;
+        color: #fff;
+    }
+    .shopcart2,.shopcart{       
+        cursor: pointer;
+    }
+    /* .pagination{
+        position: fixed;
+        bottom: 30px;
+    } */
+    .sort li{
+        cursor: pointer;
+    }
+   
+
+</style>
+
+<body>
+    <div class="topwrap">
+        <div class="top">
+            <ul>  
+                <li><a href="">康佳新闻</a>|</li>
+                <li><a href="">加入康佳</a>|</li>
+                <li><a href="">校园招聘</a>|</li>
+                <li><a href="">康佳社区</a>|</li>
+                <li><a href="">大宗采购</a>|</li>
+                <li><a href="">积分商城</a>|</li>
+            </ul>
+            <div class="top-right">
+                <!-- 登录 -->
+                <p class="longin"><a href="login.html">
+                    登录
+                </a>|</p>
+                <!-- 注册 -->
+                <p class="singup"><a href="signup.html">
+                    注册
+                </a></p>
+
+                <div class="shopcart" id="cart"><i class="iconfont">&#xe624;</i><span> 购物车<em>(0)</em></span></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="navwrap">
+        <div class="nav">
+            <div class="logo"><img src="../img/logo.png" alt=""></div>
+            <ul class="nav-ul">
+                <li><a href="../html/konka.html">首页</a></li>
+                <li><a href="">电视</a></li>
+                <li><a href="">冰箱</a></li>
+                <li><a href="">洗衣机</a></li>
+                <li><a href="">生活电器</a></li>
+                <li><a href="">厨卫电器</a></li>
+                <li><a href="">智能硬件</a></li>
+                <li><a href="">K迷优品</a></li>
+                <li><a href="">大宗采购</a></li>
+                <li><a href="">服务</a></li>
+                <li><a href=""><img src="https://www.konka.com/themes/pc/konka/images/header-scrae.png?vaae5" alt=""></a></li>
+
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="tvcontainer">
+        <div class="glist-container">
+            <div class="">
+                <div style="height: 44px;">
+                    <ul class="sort">
+                        <li class="cur" data-sort="default">默认排序</li>
+                        <li data-sort="price_asc">价格从低到高</li>
+                        <li data-sort="price_desc">价格从高到低</li>
+                    </ul>
+                    <!-- <div id="cart">购物车</div> -->
+                </div>
+                <div>
+                    <ul class="box-list row-3">
+
+
+                    </ul>
+                </div>
+                <nav style="text-align: center; position: absolute; right: 20px;bottom: 0;" >
+                    <ul class="pagination">
+                        <li id="prevPage">
+                            <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">上一页</span>
+                            </a>
+                        </li>
+                        <li id="nextPage">
+                            <a href="#" aria-label="Next">
+                                <span aria-hidden="true">下一页</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- <ul class="col-xs-3">
+
+            </ul> -->
+            <!-- <ol class="breadcrumb"></ol> -->
+            <!-- <div class="goods-list">
+                <div class="tvlist-nav">
+                    <div class="left"><a href="">默认</a>
+                    <a href="">价格<i></i></a>
+                    <a href="">销量</a>
+                    <a href="">好评</a>
+                    <a href="">最新</a></div>
+                    <div class="right">
+
+                    </div>
+                </div>
+                <div class="row-3">
+                    
+
+                </div>
+
+            </div> -->
+
+          
+       
+            <!-- <script>
+                // $(()=>{
+                    let ul=document.querySelector(".row-3");
+                    $.getJSON("../server/tvtv.json",(data)=>{
+                        let html=data.map(item=>{
+                            return `
+                            <li class="col-xs-3 item" data-id=${item.goodid}>
+                            <div class="tvitem-box" index='${item.good_id}'>
+                                <a href=""><img src=${item.src}></a>
+                                <h4 class="tv-title">${item.title}</h4>
+                                <div class="tv-dis">${item.dis}</div>
+                                    <p class="tv-price">￥${item.price} 
+                                    </p> 
+                                    <p class="shopcart2 addCart"><a href="">加入购物车</a></p> 
+                            </div>                       
+                            </li>`    
+                        }).join("");
+                        ul.innerHTML=html;              
+                    })
+
+        
+                // })
+
+              
+           
+            </script> -->
+                               
+        </div>       
+    </div>
+  
+
+</body>
+
+
+
+            
+</html>
