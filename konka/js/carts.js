@@ -156,15 +156,15 @@ $(()=>{
     })
 
 
-    var cartbox=$(".cartBox").find("input[type=checkbox]").hasClass("mark");
-    console.log(cartbox)
+    // var cartbox=$(".cartBox").find("input[type=checkbox]").hasClass("mark");
+    // console.log(cartbox)
     
-    cartbox? $("#all").next().addClass("mark") : $("#all").next().removeClass("mark"); 
+    // cartbox? $("#all").next().addClass("mark") : $("#all").next().removeClass("mark"); 
 
-    $("#all").
+    // $("#all").
 
 
-    $(".cartorder_list").on("click",".list_amount",function(){
+    $(".cartorder_list").on("click",".li",function(){
      
      
        $(this).children(".plus")
